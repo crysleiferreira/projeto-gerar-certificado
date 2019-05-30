@@ -1,0 +1,21 @@
+<div class="container">
+    
+  <div  align="center">
+      <form #formpesquisa="ngForm">
+        <label for="procurar">Digite o CPF</label><br>
+          <input  class="shadow bg-white rounded " name="procurar" id="procurar" type="number" [(ngModel)]="procurar"><br><br>
+      <button class="btn btn-primary" (click)="pesquisar()" [disabled]="!formpesquisa.form.valid">Pesquisar</button><br>
+      </form>
+  </div>
+  <div *ngIf="tela == 'apresenta'">
+    <p class="text-info" *ngIf="resposta === null">CPF não encontrado !</p>
+    <p *ngIf="resposta != null">
+      <li>Informações do Usuario</li><br>
+      Nome : {{resposta?.nome}}<br>
+      CPF : {{resposta?.cpf}}<br>
+      Email : {{resposta?.email}}<br>
+      Telefone : {{resposta?.telefone}}<br>
+      Modalidade : {{resposta?.modalidade}}
+    </p>
+  </div>
+</div>

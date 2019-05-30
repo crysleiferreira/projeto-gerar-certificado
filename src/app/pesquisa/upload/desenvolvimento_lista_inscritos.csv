@@ -1,0 +1,4 @@
+cidade;nome_completo;cpf;rg;email;telefone;endereco;registro_crea;formacao;modalidade
+Palmas;Marcus Vinícius Prado Mendes;1537893410;876543;marcus.vm@crea-to.org.br;6332199899;Quadra 112 sul, Rua SR 07, Lote 6;12345-DTO;Superior;Civil
+Gurupi;Regirlan Leite Silva;1234567891;123456-sspto;ti@crea-to.org.br;6332199800;Quadra 112 sul, Rua SR 10, Lote 10;98765-DTO;Tecnólogo;Agronomia
+Araguaína;Cryslei;1020304050;123-sspto;ti@crea-to.org.br;6332199801;Quadra 112 sul, Rua SR 01, Lote 01;11111-DTO;Superior;Civil

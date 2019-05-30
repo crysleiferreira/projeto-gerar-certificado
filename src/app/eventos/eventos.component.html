@@ -1,0 +1,17 @@
+<div class="container">
+    <table class="table" >
+        <thead class="thead-light">
+          <tr class="col-xs-6 col-sm-4">
+            <th >Nome do Evento</th> 
+            <th >Nome do Palestrante</th> 
+            <th ></th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let evento of service.eventos()">
+            <td >{{evento.nome}}</td>
+            <td >{{evento.nomepalestrante}}</td>
+          </tr>
+        </tbody>
+      </table>
+</div>

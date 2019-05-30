@@ -1,0 +1,31 @@
+<div class="container">
+  <div class="row d-flex justify-content-center">
+    <div class="shadow bg-white rounded " align="center" >
+      <form #formcadastro="ngForm" >       
+        <h3 align="center">Cadastrar Evento</h3>
+        <label for="nome">Nome do Evento</label><br>
+            <input name="nome" id="nome" type="text" [(ngModel)]="nome" ><br>
+        <label for="datainicial">Data inicial</label><br>
+            <input type="date" name="datainicial" id="datainicial" [(ngModel)]="datainicial" ><br>
+        <label for="datafinal">Data final</label><br>
+            <input type="date" name="datafinal" id="datafinal" [(ngModel)]="datafinal" ><br>
+        <label for="local">Local</label><br>
+            <input type="text" name="local" id="local" [(ngModel)]="local" ><br>
+        <label for="horas">Horas</label><br>
+            <input type="number" name="horas" id="horas" [(ngModel)]="horas" ><br>
+        <label for="nomepalestrante">Nome do palestrante</label><br>
+            <input type="text" name="nomepalestrante" id="nomepalestrante" [(ngModel)]="nomepalestrante" ><br>
+        <input type="file"  (change)="inputFileChange($event)"/><br>
+          
+        <button class="btn btn-primary" (click)="salvar()" [disabled]="!formcadastro.form.valid">Salvar</button>
+        
+      </form>
+    </div>
+  </div>
+</div>
+
+<!-- <button class="btn btn-primary" type="submit">Salvar</button><br> -->
+<!-- <div class="custom-file">
+<input type="file" class="custom-file-input" name="arquivo" id="custom-file" (change)="onChange($event)" [(ngModel)]="arquivo"/>
+<label class="custom-file-label" id="arquivoLabel" for="arquivo">Selecionar arquivo</label><br>
+-->
